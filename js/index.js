@@ -41,14 +41,45 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 const header = document.querySelector('header');
-const navbar= document.querySelectorAll('nav a');
+const navBar = document.querySelectorAll('nav a');
 const h1 = document.querySelector('h1');
 const cta = document.getElementById('cta-img');
-const buttonGetStarted = document.querySelector('.cta button');
+const startButton = document.querySelector('.cta button');
 const h4 = document.querySelectorAll('h4');
 const p = document.querySelectorAll('p');
 const midImg = document.getElementById("middle-img");
 const startButton = document.createElement('a');
 
 
-const nav = siteContent.nav;
+const navbar = siteContent.nav;
+navBar[0].textContent = siteContent["nav"]["nav-item-1"];
+navBar[1].textContent = siteContent["nav"]["nav-item-2"];
+navBar[2].textContent = siteContent["nav"]["nav-item-3"];
+navBar4[3].textContent = siteContent["nav"]["nav-item-4"];
+navBar[4].textContent = siteContent["nav"]["nav-item-5"];
+navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+
+h1.textContent = "DOM Is Awesome";
+
+cta.setAttribute = ('img-src',"img/header-img.png");
+
+startButton.textContent = "Get Started";
+
+h4[0].textContent = siteContent["main-content"]["features-h4"];
+h4[1].textContent = siteContent["main-content"]["about-h4"];
+h4[2].textContent = siteContent["main-content"]["services-h4"];
+h4[3].textContent = siteContent["main-content"]["product-h4"];
+h4[4].textContent = siteContent["main-content"]["vision-h4"];
+h4[5].textContent = siteContent["contact"]["contact-h4"];
+
+
+
+p[0].textContent = siteContent['main-content']["features-content"];
+p[1].textContent = siteContent["main-content"]["about-content"];
+p[2].textContent = siteContent["main-content"]["services-content"];
+p[3].textContent = siteContent["main-content"]["product-content"];
+p[4].textContent = siteContent["main-content"]["vision-content"];
+p[5].textContent = siteContent["contact"]["123 Way 456 Street <br> Somewhere, USA"];
+p[6].textContent = siteContent["contact"]["phone"];
+p[7].textContent = siteContent["contact"]["email"];
+p[8].textContent = siteContent["footer"]["copyright"];
