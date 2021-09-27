@@ -41,27 +41,27 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 const header = document.querySelector('header');
-const navBar = document.querySelectorAll('nav a');
+//  const navBar =Array.forEach(document.querySelectorAll('nav a'));
+ const navBar = Array.from(document.querySelectorAll('nav a'));
 const h1 = document.querySelector('h1');
 const cta = document.getElementById('cta-img');
 const startButton = document.querySelector('.cta button');
 const h4 = document.querySelectorAll('h4');
+const middleImg = document.getElementById("middle-img");
 const p = document.querySelectorAll('p');
-const midImg = document.getElementById("middle-img");
-const startButton = document.createElement('a');
 
 
-const navbar = siteContent.nav;
-navBar[0].textContent = siteContent["nav"]["nav-item-1"];
-navBar[1].textContent = siteContent["nav"]["nav-item-2"];
-navBar[2].textContent = siteContent["nav"]["nav-item-3"];
-navBar4[3].textContent = siteContent["nav"]["nav-item-4"];
-navBar[4].textContent = siteContent["nav"]["nav-item-5"];
-navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+//would not work
+// navBar[0].textContent = siteContent["nav"]["nav-item-1"];
+// navBar[1].textContent = siteContent["nav"]["nav-item-2"];
+// navBar[2].textContent = siteContent["nav"]["nav-item-3"];
+// navBar4[3].textContent = siteContent["nav"]["nav-item-4"];
+// navBar[4].textContent = siteContent["nav"]["nav-item-5"];
+// navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
 h1.textContent = "DOM Is Awesome";
 
-cta.setAttribute = ('img-src',"img/header-img.png");
+cta.setAttribute = ('src',siteContent["cta"]["img-src"]);
 
 startButton.textContent = "Get Started";
 
@@ -83,3 +83,5 @@ p[5].textContent = siteContent["contact"]["123 Way 456 Street <br> Somewhere, US
 p[6].textContent = siteContent["contact"]["phone"];
 p[7].textContent = siteContent["contact"]["email"];
 p[8].textContent = siteContent["footer"]["copyright"];
+
+middleImg.setAtrribute('src',siteContent['main-content']["middle-img-src"]);
