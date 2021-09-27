@@ -60,7 +60,7 @@ const p = document.querySelectorAll('p');
 // navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
 h1.textContent = "DOM Is Awesome";
-
+//will not show images,cant figure out why
 cta.setAttribute = ('src',siteContent["cta"]["img-src"]);
 
 startButton.textContent = "Get Started";
